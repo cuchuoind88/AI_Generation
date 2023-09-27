@@ -25,7 +25,7 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch('https://ai-image-jzbg.onrender.com/v1/lxc', {
+        const response = await fetch('https://ai-image-jzbg.onrender.com/api/v1/lxc', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
